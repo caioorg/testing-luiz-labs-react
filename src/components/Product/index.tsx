@@ -3,7 +3,7 @@ import cls from 'classnames'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { IProducts } from '../../types/products'
+import { IProducts } from '@app/types/products'
 import { card, favorite, title, price } from './styles'
 
 interface IProductProps {

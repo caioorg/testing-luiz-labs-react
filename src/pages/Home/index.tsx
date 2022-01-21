@@ -1,9 +1,11 @@
 import { useEffect, useCallback, useState } from 'react'
 import Grid from '@mui/material/Grid'
-import ProductCard from '../../components/Product'
-import { getAllProducts } from '../../services/products'
-import { IProducts } from '../../types/products'
-import storage from '../../utils/storage'
+import Typography from '@mui/material/Typography'
+import ProductCard from '@app/components/Product'
+import { getAllProducts } from '@app/services/products'
+import { IProducts } from '@app/types/products'
+import storage from '@app/utils/storage'
+import { title } from './styles'
 
 const Home = () => {
   const [products, setProducts] = useState<IProducts[]>([])
@@ -38,6 +40,9 @@ const Home = () => {
 
   return (
     <Grid container spacing={3}>
+      <Grid item xs={12} sm={12} md={12} lg={12}>
+        <Typography sx={title}>Home</Typography>
+      </Grid>
       {products?.map((product, index) => (
         <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
           <ProductCard product={product} onSelectedWishlist={onSelectedWishlist} />
