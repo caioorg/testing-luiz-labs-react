@@ -1,6 +1,6 @@
 # Product list with Wishlist
 
-This project was developed so that the user can perform a search of a user of GitHub and be able to view user's repository
+One of the most interesting features in an e-commerce is the Wishlist, or wish list. In e-commerce, the customer can search for products, or access the product details screen. On both screens he can select the products he prefers and store them in his Wishlist. At any time, the customer can view his complete Wishlist, with all the products he has selected on a single screen.
 
 - Create React App with ViteJS by [vite-js](https://vitejs.dev/)
 - React support by [react](https://pt-br.reactjs.org/)
